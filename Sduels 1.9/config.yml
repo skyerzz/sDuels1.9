@@ -1,0 +1,137 @@
+#Configuration file for SDuels by skyerzz
+#
+#IF YOU CHANGE ANYTHING IN THIS FILE, USE /sduel reload INGAME!
+#ONLY USE SPACES IN THIS FILE, NO TABS!
+
+helpmessage:
+  - "&7Help for sDuels:"
+  - "&e/duel <player> &6- Challenges <player> to a duel."
+  - "&e/duel accept <player> &6- Accept the invitation to duel."
+  - "&e/duel stats <player> &6- See the stats of a player."
+  - "&e/duel version &6- find the current version of sDuel."
+
+
+#textchat messages
+
+#nopermissions message
+nopermissionmessage: "§cYou do not have permissions for this!"
+
+#what a player sees if they get invited to duel
+duelinvitemessage: "&e<player> has challenged you to a duel. Click to accept!"
+duelconfirmation: "&eYou challanged <player> for a duel!"
+duelinvitehover: "&eClick to accept the duel!"
+
+#if the duel gets cancelled, this message will be send to both players
+duelcancelledmessage: "&cSomeone gave up, Duel cancelled!"
+
+#if no arenas are available
+duelcancelledmessage: "&cNo available arenas, Duel is cancelled!"
+
+#if one of the players is already in game, this message in sent
+alreadyingamemessage: "&eOne of the players is already in a duel!"
+
+#The countdown for the battle. <seconds> gets replaced with the current seconds till the match begins.
+countdownmessage: "&6The match begins in <seconds> seconds!"
+
+#When the countdown ends, this messge is send to both players
+startbattle: "&6GO!"
+
+#This message is sent to the other player if an opponent picks a kit.
+readymessage: "&6Your opponent is ready!"
+
+#name of the scoreboard in a game MAKE SURE THIS IS NOT LONGER THAN 16 CHARACTERS
+scoreboardname: "&4Duel"
+
+#this will appear at the bottom of the scoreboard
+bottomscoreboard: "&6pvp.sandosity.com"
+
+#if a player does not exist in our database, this is shown as message (in case of stats call)
+playernonexistant: "&cThis player does not appear in our database!"
+
+#if a player tries to battle themselfs, this shows
+battleself: "&cYou cannot battle yourself!"
+
+#if the player tries to accept a duel when the opponent never invited them
+nochallenge: "&cThis player did not challenge you!"
+
+#for the winner:
+winmessage: "&6You Won!"
+
+#for the loser:
+lossmessage: "&6You Lost!"
+
+
+
+#GUI & kits
+menuname: "&9Kit Menu"
+
+
+
+#Use numberic ID's for the items. please keep this format:
+#item: ID:metadata,amount,enchantmentid:level,enchantmentid:level, ......
+#
+#if you do not fill in enchantments, the plugin assumes it will not need any.
+#If you do not need a metadata, you can either remove the :metadata or put down :0.
+#
+#Armor will automatically be equipped. If a second armor set is added, it will go in the inventory.
+kits:
+   kit1:
+      name: "&6Potion PvP"
+      lore:
+           - "&7POTION- Put your lore here"
+           - ""
+           - "&cUse Empty lines for an empty space in the lore."
+      menuitem: 373:8197
+      items:
+           - 310,1,0:1
+           - 311,1,0:1
+           - 312,1,0:1
+           - 313,1,0:1
+           - 276,1,16:1
+           - 373:16421,32
+           - 393:0,32
+   gapplekit:
+      name: "&6Gapple PvP"
+      lore:
+           - "&GAPPLE- Put your lore here"
+           - ""
+           - "&cUse Empty lines for an empty space in the lore."
+      menuitem: 394
+      items:
+           - 310,1,0:1,1:2
+           - 311,1,0:1,1:3
+           - 312,1,0:1,1:5
+           - 313,1,0:1,1:100
+           - 276,1,16:1,17:4
+           - 373:16421,32
+           - 393:0,32
+   mcsg:
+      name: "&6MCSG"
+      lore:
+           - "&MCSG- Put your lore here"
+           - ""
+           - "&cUse Empty lines for an empty space in the lore."
+      menuitem: 1
+      items:
+           - 310,1
+           - 311,1
+           - 312,1
+           - 313,1,0:1,1:100
+           - 276,1,16:1,17:4
+           - 373:16421,32
+           - 393:0,32
+           
+
+
+#location to teleport both players to after battle
+afterbattlelocation: x,y,z,yaw,pitch,world
+
+#arenas locations
+arenas:
+   #examples, remove the # to use this, and replace the locations with correct coordinates.
+   #0:
+   #  location1: x,y,z,yaw,pitch,worldname
+   #  location2: x,y,z,yaw,pitch,worldname
+   #1:
+   #  location1: x,y,z,yaw,pitch,worldname
+   #  location2: x,y,z,yaw,pitch,worldname

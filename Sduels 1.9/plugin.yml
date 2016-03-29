@@ -1,0 +1,18 @@
+#Sduel
+name: Sduel
+main: com.sky.main.Main
+author: skyerzz
+version: C1.8.8_R1.0
+prefix: Sduel
+
+commands:
+  duel:
+    description: Standard command for Duel
+    
+permissions:    
+    duel.duel:
+        default: op
+    duel.viewstats:
+        default: op
+    duel.reload:
+        default: op
