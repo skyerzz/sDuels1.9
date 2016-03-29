@@ -6,6 +6,7 @@ import java.util.Random;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
+import org.bukkit.Sound;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -396,7 +397,11 @@ public class Battle implements Listener{
 			   public void run() 
 			   {
 				   if(i>=5)
-				   {
+				   { 
+					   //Ding
+					   player.playSound(player.getLocation(), Sound.BLOCK_NOTE_PLING, 1f, 13f);
+					   opponent.playSound(player.getLocation(), Sound.BLOCK_NOTE_PLING, 1f, 13f);
+					   
 					   //start the battle, unfreeze them and cancel the runnable.
 					   player.sendMessage(startbattle);
 					   opponent.sendMessage(startbattle);
@@ -412,6 +417,10 @@ public class Battle implements Listener{
 					   this.cancel();
 					   return;
 				   }
+				   //Dong
+				   player.playSound(player.getLocation(), Sound.BLOCK_NOTE_PLING, 1f, 5f);
+				   opponent.playSound(player.getLocation(), Sound.BLOCK_NOTE_PLING, 1f, 5f);
+				   
 				   //send both players the countdown message
 				   String count = 5-i + "";
 				   String currentcountdownmessage = countdownmessage.replace("<seconds>", count);
