@@ -123,7 +123,7 @@ public class Battle implements Listener{
 		}
 	}
 	
-	public String cancelled = "§cYour opponent gave up, Duel is cancelled!";
+	public String cancelled = "§cSomeone gave up, Duel cancelled!";
 	public String noarena = "§cNo available arenas, Duel is cancelled!";
 	public String startbattle = "§6GO!";
 	public String countdownmessage = "§6The match begins in <seconds> seconds!";
