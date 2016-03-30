@@ -2,7 +2,7 @@
 name: Sduel
 main: com.sky.main.Main
 author: skyerzz
-version: C1.8.8_R1.0
+version: C1.9_R1.0
 prefix: Sduel
 
 commands:
