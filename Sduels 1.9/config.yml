@@ -6,6 +6,7 @@
 helpmessage:
   - "&7Help for sDuels:"
   - "&e/duel <player> &6- Challenges <player> to a duel."
+  - "&e/duel invite <player> &6- Challenges <player> to a duel."
   - "&e/duel accept <player> &6- Accept the invitation to duel."
   - "&e/duel stats <player> &6- See the stats of a player."
   - "&e/duel version &6- find the current version of sDuel."

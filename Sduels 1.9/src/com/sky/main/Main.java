@@ -226,7 +226,6 @@ public class Main extends JavaPlugin implements Listener{
 	{
 		if(objective == null)
 		{
-			System.out.println("PlayerData returning for player = null");
 			String nullpath = Main.maindatafolder + "/players/null.yml";
 			return new PlayerData(nullpath, null);
 		}
@@ -237,7 +236,7 @@ public class Main extends JavaPlugin implements Listener{
 		}
 		
 		String path = Main.maindatafolder + "/players/" + objective.getUniqueId() + ".yml";
-		System.out.println("PlayerData retrieved for player " + objective.getName());
+		System.out.println("[sDuel] PlayerData retrieved for player " + objective.getName());
 
 		return new PlayerData(path, objective);
 		
@@ -249,7 +248,6 @@ public class Main extends JavaPlugin implements Listener{
 		
 		if(PD.path.equals(this.getDataFolder() + "/players/null.yml"))
 		{
-			System.out.println("PlayerData for " + player.getName() + " is null!");
 			return;
 		}
 		

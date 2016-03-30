@@ -330,7 +330,6 @@ public class Battle implements Listener{
 	{
 		if(challenger==null || defender==null)
 		{
-			System.out.println("startbattle has a null player, cancelled!");
 			return;
 		}
 		duels.put(challenger, defender);

@@ -46,7 +46,7 @@ public class Inventories{
 		int start = page*45 - 45;//starts at 0
 		if(Kits.kits.isEmpty())
 		{
-			System.out.println("There are no kits specified! cannot open inventory!");
+			main.getLogger().warning("There are no kits specified! cannot open inventory!");
 			return;
 		}
 		if(start > Kits.kits.size()-1)

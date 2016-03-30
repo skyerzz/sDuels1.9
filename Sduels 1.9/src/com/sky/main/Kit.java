@@ -19,7 +19,6 @@ public class Kit {
 	public Kit(YamlConfiguration yml, String kit)
 	{
 		kit = "kits." + kit;
-		System.out.println("Loading kit " + kit);
 		
 		String temp = yml.getString(kit + ".name");
 		if(temp!=null)
